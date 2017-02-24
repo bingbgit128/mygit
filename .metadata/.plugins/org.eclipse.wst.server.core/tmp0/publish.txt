@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Dec 15 22:31:30 CST 2016
+org.eclipse.jst.jee.server\:demo=D\:\\yang\\server\\apache-tomcat-7.0.73-windows-x86\\apache-tomcat-7.0.73\\webapps\\demo
+org.eclipse.jst.jee.server\:/binary\:D\:\\yang\\server\\library\\org\\springframework\\spring-web\\4.1.3.RELEASE\\spring-web-4.1.3.RELEASE.jar=D\:\\yang\\server\\apache-tomcat-7.0.73-windows-x86\\apache-tomcat-7.0.73\\webapps\\demo\\WEB-INF\\lib\\spring-web-4.1.3.RELEASE.jar

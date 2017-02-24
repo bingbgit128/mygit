@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1480936460273_2" label="test" name="test">
+<item elementID="=demo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=spring4" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-mvc-study" type="4"/>
+<item elementID="=seckill" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=demo1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1482313076712_3" label="spring1" name="spring1"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1480693505526_0" label="Window Working Set" name="Aggregate for window 1480693505525"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1483053620822_4" label="Multiple Working Sets" name="Aggregate:spring1:test:">
+<workingSet IMemento.internal.id="spring1"/>
+<workingSet IMemento.internal.id="test"/>
+</workingSet>
+<mruList name="test"/>
+</workingSetManager>
