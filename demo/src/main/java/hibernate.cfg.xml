@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+<!--     	<property name="connection.username">root</property> -->
+<!--     	<property name="connection.password">password</property> -->
+<!--     	<property name="connection.driver_class">com.mysql.jdbc.Driver</property> -->
+<!--     	<property name="connection.url">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=true</property> -->
+    	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    	
+    	<property name="show_sql">true</property>
+    	<property name="format_sql">true</property>
+    	<property name="hbm2ddl.auto">update</property>
+    	
+<!--     	<property name="hibernate.current_session_context_class">thread</property> -->
+    	
+<!--     	开启二级缓存 -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		
+<!-- 		4.0以上配置 指定类 -->
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+   
+    	<mapping resource="com/yang/demo/entity/Student.hbm.xml" />
+    	<mapping resource="com/yang/demo/entity/Grade.hbm.xml" />
+    	<mapping resource="com/yang/demo/entity/Teacher.hbm.xml" />
+    	
+    	
+<!--     	<class-cache usage="read-only" class="com.yang.demo.entity.Teacher"/> -->
+    	
+    </session-factory>
+    
+    
+</hibernate-configuration>

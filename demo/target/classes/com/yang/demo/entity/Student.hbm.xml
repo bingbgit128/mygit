@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-12-19 18:43:12 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.yang.demo.entity.Student" table="STUDENT">
+    	<cache usage="read-only"/>
+        <id name="sId" type="java.lang.Integer" >
+            <column name="SID" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="age" type="java.lang.String">
+            <column name="AGE" />
+        </property>
+        
+        <many-to-one name="grade" class="com.yang.demo.entity.Grade" column="GID" cascade="all" ></many-to-one>
+   
+   		<set name="sTeacher" table="t_teach_stu" cascade="all" inverse="false" lazy="true">
+   			<key column="SID"></key>
+   			
+   			 <many-to-many class="com.yang.demo.entity.Teacher" column="tId"/>
+   		</set>
+   		
+    </class>
+</hibernate-mapping>

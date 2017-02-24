@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-12-19 18:43:12 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.yang.demo.entity.Grade" table="GRADE">
+    	<cache usage="read-only"/>
+        <id name="gId" type="java.lang.Integer">
+            <column name="GID" />
+            <generator class="increment" />
+        </id>
+        <property name="gName" type="java.lang.String" >
+            <column name="GNAME" />
+        </property>
+        <property name="gDesc" type="java.lang.String" >
+            <column name="GDESC" />
+        </property>
+        <!-- 
+        	inverse = false 由one 方 来控制
+        	true  由 many方控制
+        	
+        	cascade  当进行保存时级联操作
+         -->
+        
+    
+       <set name="students" table="STUDENT" inverse="true" cascade="save-update"> 
+            <key>
+                <column name="GID" />
+            </key>
+            <one-to-many class="com.yang.demo.entity.Student" />
+        </set>  
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.yang.demo.hibernate.StudentTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE!
+com.yang.demo.hibernate.StudentTest.testSerach()  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testSerach(StudentTest.java:141)
+
+com.yang.demo.hibernate.StudentTest.testSaveStudents()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testSaveStudents(StudentTest.java:161)
+
+com.yang.demo.hibernate.StudentTest.testDelete()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testDelete(StudentTest.java:180)
+
+com.yang.demo.hibernate.StudentTest.testQuery()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testQuery(StudentTest.java:91)
+
+com.yang.demo.hibernate.StudentTest.testTeacher()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testTeacher(StudentTest.java:132)
+
+com.yang.demo.hibernate.StudentTest.testQueryToList()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testQueryToList(StudentTest.java:76)
+
+com.yang.demo.hibernate.StudentTest.testUpateStudents()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.yang.demo.hibernate.StudentTest.testUpateStudents(StudentTest.java:170)
+
